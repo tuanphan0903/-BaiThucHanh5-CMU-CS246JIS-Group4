@@ -6,16 +6,16 @@ public class thuake {
 
 	public static void main(String[] args) {
 		Parent objP = new Parent();
-		Scanner objsc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.print("MA:");
-		objP.setid(objsc.nextInt());
-		objsc.nextLine();
+		objP.id = sc.nextInt();
+		sc.nextLine();
 
 		System.out.print("Ten:");
-		objP.setname(objsc.nextLine());
+		objP.name = sc.nextLine();
 
 		System.out.print("Diem:");
-		objP.setavg(objsc.nextFloat());
+		objP.avg = sc.nextFloat();
 
 		System.out.print("Thong tin sinh vien:" + objP.tostring());
 
